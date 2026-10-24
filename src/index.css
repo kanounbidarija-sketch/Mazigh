@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-dark: #0B284C;
+  --color-navy-light: #0D325E;
+  --color-gold: #E4BC44;
+  --color-gold-hover: #d1ab38;
+  --color-ivory: #F4F4EC;
+  --color-pure-white: #FFFFFF;
+}
+
+@layer base {
+  :root {
+    --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-arabic: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #F8FAFC;
+  }
+
+  body {
+    font-family: var(--font-latin);
+    background-color: #F8FAFC;
+    color: #1E293B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [dir="rtl"] {
+    font-family: var(--font-arabic);
+    letter-spacing: normal;
+  }
+}
+
+/* Custom scrollbar in dark navy and warm gold */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B284C;
+  border: 1px solid #E4BC44;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E4BC44;
+}

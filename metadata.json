@@ -1,0 +1,6 @@
+{
+  "name": "Centre d'Orientation, Concours & Formation",
+  "description": "Portail web bilingue (français/arabe) pour centre de préparation aux concours, soutien scolaire, langues et orientation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
